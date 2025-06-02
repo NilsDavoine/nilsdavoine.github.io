@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV - Nils Davoine</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #111; /* Soft black background */
-      color: #eee; /* Lighter text color */
+      background-color: #111;
+      color: #eee;
     }
     .topnav {
       overflow: hidden;
@@ -23,7 +23,6 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
     }
     .topnav a:hover {
       background-color: #ddd;
@@ -40,77 +39,41 @@
       margin: auto;
       padding: 2rem;
       padding-bottom: 24rem;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.8);
     }
-    h1 {
+    h1, h2 {
       margin-top: 0;
-      font-family: 'Arial', sans-serif; /* Softer font for headings */
     }
     p {
-      font-size: 16px; /* Larger font size for readability */
+      font-size: 16px;
     }
-    .about-container {
-      display: flex;
-      align-items: flex-start; /* Align items at the top */
-      justify-content: space-between;
-    }
-    .about-text {
-      flex: 1;
-      padding-right: 1rem;
-      text-align: justify;
-    }
-    .about-image-frame {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end; /* Align items to the right */
-      border: 0px solid white; /* White frame */
-      padding: 1rem;
-    }
-    .about-image {
-      max-width: 200px; /* Adjust image size as needed */
-      display: block;
-      margin-top: -1rem; /* Adjust margin to move the image to the top right */
-    }
-    .about-image-text {
-      flex: 1;
-      padding-left: 1rem;
-      line-height: 0.8;
-    }
-    .light-blue-link {
-    color: #6ca6e1; /* Lighter and softer blue link color */
+    .cv-section {
+      margin-bottom: 2rem;
     }
     .contact-bar {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 15px;
-      position: fixed; /* Fix the position */
+      position: fixed;
       bottom: 0;
       width: 100%;
     }
-    
     .contact-bar p {
-      margin-bottom: 5px;
+      margin: 5px;
     }
-    
     .social-icons {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    
     .social-icons a {
-      display: inline-block;
       margin: 0 10px;
     }
-    
     .social-icons img {
       width: 35px;
       height: 35px;
     }
-    /* Rest of your existing styles */
   </style>
 </head>
 <body>
@@ -128,33 +91,67 @@
   <div class="container">
     <section class="cv-section">
       <h2>Education</h2>
-      <p>2022-2023<br>1st Year PhD • Machine Learning Force Fields for Biomolecular Simulations • University of Luxembourg</p>
-      <p>2021–2022<br>Master In Silico Drug Design • Bio-informatics and statistics • University of Paris Diderot</p>
-      <p>2020–2021<br>Master In Silico Drug Design • Bioactive molecules • Università degli studi di milano</p>
-      <p>2020–2021<br>Master In Silico Drug Design • Faculty of chemistry • University of Strasbourg</p>
-      <p>2017–2020<br>Bachelor of Chemistry • Faculty of chemistry • University of Strasbourg</p>
-      <p>2015–2017<br>Bachelor of Law • Faculty of law, Political science and Management • University of Strasbourg</p>
+      <p><strong>University of Luxembourg</strong> — PhD Candidate<br>Theoretical Chemical Physics group under Prof. Alexandre Tkatchenko<br>Oct 2022 – Present</p>
+      <p><strong>University of Paris Cité, Università degli Studi di Milano, University of Strasbourg</strong><br>Double Degree Master's in In Silico Drug Design (ISDD)<br>Aug 2020 – Jun 2022</p>
+      <p><strong>University of Strasbourg</strong> — Bachelor in Chemistry<br>Aug 2017 – Jun 2020</p>
     </section>
     <section class="cv-section">
       <h2>Work Experience</h2>
-      <p>Machine Learning:<br>• Training CNN to correct and accelerate simulations</p>
-      <p>Software development:<br>• Implementation of the works above in prototype software to simulate any kind of molecular system</p>
-      <p>Molecular modelling project:<br>• Developing realistic models of 5HT2A receptors<br>• Transition state study with QM/MM methods<br>• Building and comparing 3D auto-assembled structures from experimental observations (STM)</p>
+      <p><strong>Doctoral Student</strong> — University of Luxembourg<br>Oct 2022 – Present</p>
+      <ul>
+        <li>Designed Python and introductory machine learning courses</li>
+        <li>Speaker at ESTML 2023</li>
+        <li>Collaborated with Google Research – Brain team</li>
+      </ul>
+      <p><strong>Data Science Project Coordinator</strong> — University of Luxembourg<br>Jan 2024 – Sep 2024</p>
+      <ul>
+        <li>Managed international collaboration with 4-person team</li>
+        <li>Translated data needs into actionable conclusions</li>
+        <li>Led meetings and ensured timely delivery</li>
+      </ul>
+      <p><strong>Data Analyst Intern</strong> — Université de Haute-Alsace (UHA)<br>Jan 2022 – Aug 2022</p>
+      <ul>
+        <li>Cleaned and analyzed datasets for decision-making</li>
+        <li>Built reports using Excel and Power BI</li>
+        <li>Worked with experimental teams to streamline data</li>
+      </ul>
     </section>
     <section class="cv-section">
-      <h2>Skills</h2>
-      <p>• Quantum calculations<br>• Web programming<br>• Software development</p>
+      <h2>Projects</h2>
+      <p><strong>Predicting Transplacental Drug Passage</strong> — Python, R, SQL, Scikit-learn<br>Aug 2021 – Dec 2021</p>
+      <ul>
+        <li>Built dataset to analyze drug properties</li>
+        <li>Applied cleaning, preprocessing, feature engineering</li>
+        <li>Trained ML models including decision trees, SVMs, neural nets</li>
+        <li>Evaluated models with ROC, precision, recall</li>
+      </ul>
+      <p><strong>Software Development – PhD Research</strong> — Fortran<br>Aug 2022 – Present</p>
+      <ul>
+        <li>Built custom scientific tools and extended legacy software</li>
+        <li>Implemented best practices in code structure and testing</li>
+      </ul>
+      <p><strong>Deep Learning in Theoretical Chemistry</strong> — TensorFlow, PyTorch<br>Aug 2022 – Present</p>
+      <ul>
+        <li>Built GANs and GNNs for chemical property prediction</li>
+        <li>Focused on model design, training, and evaluation</li>
+      </ul>
+    </section>
+    <section class="cv-section">
+      <h2>Technical Skills</h2>
+      <p><strong>Languages:</strong> Fluent in French and English, intermediate German, basic Luxembourgish</p>
+      <p><strong>Programming:</strong> Python, Bash, Fortran, R, SQL</p>
+      <p><strong>ML Libraries:</strong> Scikit-learn, TensorFlow, Keras, PyTorch</p>
+      <p><strong>Tools:</strong> Microsoft Office Suite, Power BI</p>
     </section>
   </div>
-</body>
-<footer>
-  <div class="contact-bar">
-    <div class="social-icons">
-      <a href="mailto:nils.davoine@uni.lu"><img src="../assets/images/10.png" alt="Email"></a>
-      <a href="https://lu.linkedin.com/in/nils-davoine-81b46b19b" target="_blank"><img src="../assets/images/9.png" alt="LinkedIn"></a>
-      <a href="https://twitter.com/NilsDavoine" target="_blank"><img src="../assets/images/7.png" alt="Twitter"></a>
-      <a href="https://github.com/DavoineNils" target="_blank"><img src="../assets/images/8.png" alt="GitHub"></a>
+  <footer>
+    <div class="contact-bar">
+      <p>📧 nils211@hotmail.fr | 📞 +352 661 495 319</p>
+      <div class="social-icons">
+        <a href="mailto:nils211@hotmail.fr"><img src="../assets/images/10.png" alt="Email"></a>
+        <a href="https://github.com/NilsDavoine" target="_blank"><img src="../assets/images/8.png" alt="GitHub"></a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</body>
 </html>
