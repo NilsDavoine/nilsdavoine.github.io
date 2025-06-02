@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog - Nils Davoine</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #eee;
       margin: 0;
       padding: 0;
-      background-color: #111; /* Soft black background */
-      color: #eee; /* Lighter text color */
     }
     .topnav {
       overflow: hidden;
@@ -23,7 +23,6 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
     }
     .topnav a:hover {
       background-color: #ddd;
@@ -33,84 +32,30 @@
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
     }
     .container {
       max-width: 800px;
       margin: auto;
       padding: 2rem;
-      padding-bottom: 24rem;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     }
-    h1 {
-      margin-top: 0;
-      font-family: 'Arial', sans-serif; /* Softer font for headings */
+    .blog-post {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 1rem;
     }
-    p {
-      font-size: 16px; /* Larger font size for readability */
+    .blog-post h3 {
+      color: #6ca6e1;
     }
-    .about-container {
-      display: flex;
-      align-items: flex-start; /* Align items at the top */
-      justify-content: space-between;
-    }
-    .about-text {
-      flex: 1;
-      padding-right: 1rem;
+    .blog-post p {
+      font-size: 16px;
+      line-height: 1.6;
       text-align: justify;
     }
-    .about-image-frame {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end; /* Align items to the right */
-      border: 0px solid white; /* White frame */
-      padding: 1rem;
+    .read-more {
+      color: #6ca6e1;
+      text-decoration: none;
     }
-    .about-image {
-      max-width: 200px; /* Adjust image size as needed */
-      display: block;
-      margin-top: -1rem; /* Adjust margin to move the image to the top right */
-    }
-    .about-image-text {
-      flex: 1;
-      padding-left: 1rem;
-      line-height: 0.8;
-    }
-    .light-blue-link {
-    color: #6ca6e1; /* Lighter and softer blue link color */
-    }
-    .contact-bar {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed; /* Fix the position */
-      bottom: 0;
-      width: 100%;
-    }
-    
-    .contact-bar p {
-      margin-bottom: 5px;
-    }
-    
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    
-    .social-icons img {
-      width: 35px;
-      height: 35px;
-    }
-    /* Rest of your existing styles */
   </style>
 </head>
 <body>
@@ -121,32 +66,36 @@
     <a href="index.html">Blog</a>
     <a href="../team/index.html">Team</a>
   </div>
+
   <header>
     <h1>Blog</h1>
-    <p>Read about my thoughts and experiences.</p>
+    <p>Thoughts on science, machine learning, and academic life.</p>
   </header>
+
   <div class="container">
-    <section class="blog-post">
-      <h2>Journal presentations:</h2>
-      <p>Metal3D: a general deep learning framework for accurate metal ion location prediction in proteins. <a href="https://www.nature.com/articles/s41467-023-37870-6" style="color: #6ca6e1;">Link</a> to the Paper.</p>
-      <p>Boltzmann generators: Sampling equilibrium states of Many-body systems with deep learning. <a href="Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning" style="color: #6ca6e1;">Link</a> to the Paper.</p>
-    </section>
-    <section class="blog-post">
-      <h2>Hugging Face</h2>
-      <img alt="Hugging Face Transformers Library" src="https://huggingface.co/datasets/huggingface/documentation-images/raw/main/transformers-logo-light.svg" width="352" height="59" style="max-width: 100%;">
-      <p>State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow. <a href="https://github.com/huggingface/transformers" style="color: #6ca6e1;">Link</a> to Github repository.</p>
-    </section>
-    <!-- Add more blog post sections as needed -->
-  </div>
-</body>
-<footer>
-  <div class="contact-bar">
-    <div class="social-icons">
-      <a href="mailto:nils.davoine@uni.lu"><img src="../assets/images/10.png" alt="Email"></a>
-      <a href="https://lu.linkedin.com/in/nils-davoine-81b46b19b" target="_blank"><img src="../assets/images/9.png" alt="LinkedIn"></a>
-      <a href="https://twitter.com/NilsDavoine" target="_blank"><img src="../assets/images/7.png" alt="Twitter"></a>
-      <a href="https://github.com/DavoineNils" target="_blank"><img src="../assets/images/8.png" alt="GitHub"></a>
+    <div class="blog-post">
+      <h3>How Machine Learning is Changing Theoretical Chemistry</h3>
+      <p>
+        The marriage of ML and theoretical chemistry isn't just hype — it's accelerating our ability to predict molecular behavior, correct quantum simulations, and extract insights from complex systems. In this post, I share my experience applying neural networks to improve force field predictions in molecular simulations.
+      </p>
+      <a href="#" class="read-more">Read more →</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>What I Learned Collaborating with Google Research</h3>
+      <p>
+        Working with the Brain team at Google was more than a technical challenge — it was a lesson in scale, rigor, and collaboration. From building large chemical datasets to understanding what “production-ready” means in science, this post reflects on those lessons and how they shaped my research.
+      </p>
+      <a href="#" class="read-more">Read more →</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>GANs, GNNs, and Molecules: A Journey through Models in Chemistry</h3>
+      <p>
+        Can deep learning architectures really "understand" chemistry? This post breaks down how I used Generative Adversarial Networks and Graph Neural Networks to model chemical properties — the wins, the frustrations, and why I’m optimistic about ML in science.
+      </p>
+      <a href="#" class="read-more">Read more →</a>
     </div>
   </div>
-</footer>
+</body>
 </html>
