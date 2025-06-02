@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nils Davoine Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Nils Davoine</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #eee;
       margin: 0;
       padding: 0;
-      background-color: #111; /* Soft black background */
-      color: #eee; /* Lighter text color */
     }
     .topnav {
       overflow: hidden;
@@ -23,7 +23,6 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
     }
     .topnav a:hover {
       background-color: #ddd;
@@ -33,158 +32,70 @@
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
     }
     .container {
-      max-width: 800px;
+      max-width: 600px;
       margin: auto;
       padding: 2rem;
-      padding-bottom: 12rem;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     }
-    h1 {
-      margin-top: 0;
-      font-family: 'Arial', sans-serif; /* Softer font for headings */
-    }
-    p {
-      font-size: 16px; /* Larger font size for readability */
-    }
-    .about-container {
-      display: flex;
-      align-items: flex-start; /* Align items at the top */
-      justify-content: space-between;
-    }
-    .about-text {
-      flex: 1;
-      padding-right: 1rem;
-      text-align: justify;
-    }
-    .about-image-frame {
-      flex: 1;
+    form {
       display: flex;
       flex-direction: column;
-      align-items: flex-end; /* Align items to the right */
-      border: 0px solid white; /* White frame */
-      padding: 1rem;
     }
-    .about-image {
-      max-width: 200px; /* Adjust image size as needed */
-      display: block;
-      margin-top: -1rem; /* Adjust margin to move the image to the top right */
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #222;
+      color: #eee;
     }
-    .about-image-text {
-      flex: 1;
-      padding-left: 1rem;
-      line-height: 0.8;
-    }
-    .light-blue-link {
-    color: #6ca6e1; /* Lighter and softer blue link color */
-    }
-    .contact-bar {
+    input:focus, textarea:focus {
+      outline: none;
       background-color: #333;
+    }
+    button {
+      padding: 10px;
+      border: none;
+      background-color: #6ca6e1;
       color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed; /* Fix the position */
-      bottom: 0;
-      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
     }
-    
-    .contact-bar p {
-      margin-bottom: 5px;
+    button:hover {
+      background-color: #4d89c5;
     }
-    
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    
-    .social-icons img {
-      width: 35px;
-      height: 35px;
-    }
-    /* Rest of your existing styles */
   </style>
 </head>
 <body>
   <div class="topnav">
-    <a href="index.html">About Me</a>
-    <a href="projects/index.html">Projects</a>
-    <a href="cv/index.html">CV</a>
-    <a href="blog/index.html">Blog</a>
-    <a href="team/index.html">Team</a>
+    <a href="../index.html">About Me</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../cv/index.html">CV</a>
+    <a href="../blog/index.html">Blog</a>
+    <a href="index.html">Contact</a>
   </div>
+
   <header>
-    <h1>Nils Davoine</h1>
-    <p>Machine Learning | Chemical Physics</p>
+    <h1>Contact Me</h1>
+    <p>Have a question or want to connect? Send me a message!</p>
   </header>
+
   <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <div class="about-text">
-          <p>
-            I’m a researcher passionate about the intersection of <b>theoretical chemistry</b>, 
-            <b>machine learning</b>, and <b>scientific software development</b>. Currently, I am pursuing 
-            a PhD at the <b>University of Luxembourg</b> within the Theoretical Chemical Physics group led 
-            by Prof. Alexandre Tkatchenko.
-          </p>
-          <p>
-            My academic journey has taken me across Europe — from Strasbourg to Milan to Paris — where 
-            I earned a double degree Master’s in <b>In Silico Drug Design</b>, blending <b>bioinformatics</b>, 
-            <b>quantum chemistry</b>, and <b>data science</b>.
-          </p>
-          <p>
-            As a PhD researcher, I’ve developed machine learning models to enhance molecular simulations, 
-            contributed to international collaborations such as with <b>Google Research – Brain</b>, 
-            and taught Python and machine learning courses at the university.
-          </p>
-          <p>
-            My research spans building <b>GNNs and GANs</b> for chemical property prediction, designing 
-            custom scientific software, and working hands-on with <b>Fortran</b> and <b>PyTorch</b>. 
-            I'm driven by a curiosity for how computational methods can advance fundamental science.
-          </p>
-          <p>
-            Beyond research, I’m committed to open-source development, cross-disciplinary teamwork, 
-            and communicating complex ideas clearly and accessibly. This site is where I share my work, 
-            insights, and ongoing projects.
-          </p>
-          <p>
-            You can contact me at 
-            <a href="mailto:nils.davoine@uni.lu" class="light-blue-link">nils.davoine@uni.lu</a> 
-            for more information!
-          </p>
-        </div>
-        <div class="about-image-frame">
-          <img src="assets/images/PdP.jpg" alt="Profile Picture" class="about-image">
-          <div class="about-image-text">
-            <p><center>Nils Davoine</center><br>
-            <center>Doctoral Researcher, <a href="https://www.tcpunilu.com/current-team-members" style="color: #6ca6e1;">TCP Team</a></center><br>
-            <center>Theoretical Chemical Physics</center><br>
-            <center>University of Luxembourg 
-            <img src="assets/images/lux_flag.gif" alt="Luxembourg Flag" style="vertical-align: middle; width: 24px; height: 24px;"></center><br></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- The rest of your sections -->
+    <form action="mailto:nils.davoine@uni.lu" method="POST" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" rows="6" placeholder="Your message..." required></textarea>
+
+      <button type="submit">Send Email</button>
+    </form>
   </div>
 </body>
-<footer>
-  <div class="contact-bar">
-    <div class="social-icons">
-      <a href="mailto:nils.davoine@uni.lu"><img src="assets/images/10.png" alt="Email"></a>
-      <a href="https://lu.linkedin.com/in/nils-davoine-81b46b19b" target="_blank"><img src="assets/images/9.png" alt="LinkedIn"></a>
-      <a href="https://twitter.com/NilsDavoine" target="_blank"><img src="assets/images/7.png" alt="Twitter"></a>
-      <a href="https://github.com/DavoineNils" target="_blank"><img src="assets/images/8.png" alt="GitHub"></a>
-    </div>
-  </div>
-</footer>
 </html>
