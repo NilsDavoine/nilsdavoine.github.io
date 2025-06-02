@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects - Nils Davoine</title>
+  <title>Contact - Nils Davoine</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -35,78 +35,67 @@
       padding: 2rem;
     }
     .container {
-      max-width: 800px;
+      max-width: 600px;
       margin: auto;
       padding: 2rem;
     }
-    .project {
-      margin-bottom: 3rem;
-      border-bottom: 1px solid #444;
-      padding-bottom: 1rem;
+    form {
+      display: flex;
+      flex-direction: column;
     }
-    .project h3 {
-      color: #6ca6e1;
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #222;
+      color: #eee;
     }
-    .project p {
-      font-size: 16px;
-      line-height: 1.6;
-      text-align: justify;
+    input:focus, textarea:focus {
+      outline: none;
+      background-color: #333;
     }
-    .tags {
-      font-size: 14px;
-      color: #aaa;
-      margin-bottom: 0.5rem;
+    button {
+      padding: 10px;
+      border: none;
+      background-color: #6ca6e1;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
     }
-    .read-more {
-      color: #6ca6e1;
-      text-decoration: none;
+    button:hover {
+      background-color: #4d89c5;
     }
   </style>
 </head>
 <body>
   <div class="topnav">
     <a href="../index.html">About Me</a>
-    <a href="index.html">Projects</a>
+    <a href="../projects/index.html">Projects</a>
     <a href="../cv/index.html">CV</a>
     <a href="../blog/index.html">Blog</a>
-    <a href="../team/index.html">Contact</a>
+    <a href="index.html">Contact</a>
   </div>
 
   <header>
-    <h1>Projects</h1>
-    <p>Research and technical projects I've worked on.</p>
+    <h1>Contact Me</h1>
+    <p>Have a question or want to connect? Send me a message!</p>
   </header>
 
   <div class="container">
-    <div class="project">
-      <h3>Predicting Transplacental Drug Passage</h3>
-      <div class="tags">Python • R • SQL • Scikit-learn</div>
-      <p>
-        Built a structured dataset to analyze drug transfer across the placental barrier using machine learning.
-        Applied preprocessing, feature engineering, and classification models for accurate predictions.
-      </p>
-      <a href="predicting-drug-passage.html" class="read-more">Read more →</a>
-    </div>
+    <form action="mailto:nils.davoine@uni.lu" method="POST" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" placeholder="Your name" required>
 
-    <div class="project">
-      <h3>Scientific Software Development – PhD Context</h3>
-      <div class="tags">Fortran • Simulation • Modular Code Design</div>
-      <p>
-        Developed custom Fortran-based tools for simulation and analysis of molecular systems in theoretical chemical physics.
-        Focused on performance, extensibility, and seamless integration into the group's workflow.
-      </p>
-      <a href="phd-software-tools.html" class="read-more">Read more →</a>
-    </div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" placeholder="Your email" required>
 
-    <div class="project">
-      <h3>Deep Learning in Theoretical Chemistry</h3>
-      <div class="tags">TensorFlow • PyTorch • GANs • GNNs</div>
-      <p>
-        Implemented advanced ML architectures like GANs and GNNs to predict and generate molecular properties.
-        Integrated message passing for chemical graph modeling and explored training strategies for scientific data.
-      </p>
-      <a href="deep-learning-chemistry.html" class="read-more">Read more →</a>
-    </div>
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" rows="6" placeholder="Your message..." required></textarea>
+
+      <button type="submit">Send Email</button>
+    </form>
   </div>
 </body>
 </html>
