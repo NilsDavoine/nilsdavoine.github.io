@@ -1,48 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaction Modelling - Nils Davoine</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #eee;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      padding-bottom: 12rem;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .about-text {
+      text-align: justify;
+    }
+
+    .contact-bar {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+    }
+
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="../../index.html">About Me</a>
+  <a href="../index.html">Projects</a>
+  <a href="../../cv/index.html">CV</a>
+  <a href="../../blog/index.html">Blog</a>
+  <a href="../../team/index.html">Contact</a>
+</div>
+
+<header>
+  <h1>Interaction Modelling</h1>
+  <p>Machine learning for interaction energies and forces in molecular systems.</p>
+</header>
+
+<div class="container">
 <section class="project">
-  <h2>High-Performance Simulation Tools for Molecular Systems</h2>
 
-  <div class="about-text">
-    <p>
-      This project comes from my PhD work in theoretical chemical physics, where I developed and used simulation tools to study large molecular systems. The goal was to make complex calculations more reliable, easier to reproduce, and better integrated into daily research workflows.
-    </p>
-  </div>
+<h2>Data-Driven Modelling of Molecular Interactions</h2>
 
-  <h3>Context</h3>
-  <div class="about-text">
-    <p>
-      Molecular simulations can become very expensive when systems grow in size or when long-range interactions need to be treated carefully. In my work, this was especially important for polymers, carbon-based structures, and large systems where van der Waals interactions play a major role.
-    </p>
-  </div>
+<div class="about-text">
+<p>
+This work focused on improving how interaction energies and forces are estimated in molecular simulations. In many systems, especially large ones such as polymers or extended molecular structures, accurate calculations quickly become too expensive. The goal was to develop alternative approaches that remain reliable while reducing computational cost.
+</p>
+</div>
 
-  <h3>My Work</h3>
-  <div class="about-text">
-    <p>
-      I worked with simulation tools such as LAMMPS, GROMACS, and custom code. I also developed Fortran-based tools for analysis and simulation workflows. The focus was on performance, numerical reliability, and making the code usable in a research group setting.
-    </p>
-  </div>
+<h3>Context</h3>
+<div class="about-text">
+<p>
+Accurate modelling of interactions is central to understanding material behaviour. Methods based on quantum calculations are precise, but scale poorly with system size. This creates a gap between accuracy and practical usability when working on large molecular systems.
+</p>
+</div>
 
-  <h3>Technical Focus</h3>
-  <div class="about-text">
-    <p>
-      • Simulation and analysis of polymers, carbon chains, and molecular systems<br>
-      • Development of custom scientific code in Fortran and Python<br>
-      • Workflow design for reproducible calculations<br>
-      • Analysis of interaction energies, forces, and structural behaviour<br>
-      • Integration of tools into existing research workflows
-    </p>
-  </div>
+<h3>My Work</h3>
+<div class="about-text">
+<p>
+I developed machine learning models to estimate interaction energies and forces based on molecular configurations. These models were trained on reference data and designed to reproduce physical behaviour while remaining computationally efficient.
+</p>
+<p>
+The work included building datasets, designing model architectures, training and validating models, and analysing their behaviour. A strong focus was placed on understanding when the models work well, and where their limits are.
+</p>
+</div>
 
-  <h3>Why It Matters</h3>
-  <div class="about-text">
-    <p>
-      The aim was not only to produce results, but to build tools that could be trusted and reused. In scientific work, a method is only useful if it is clear, stable, and understandable by others. This experience shaped the way I now approach technical problems: first understand the physics, then build the tool around it.
-    </p>
-  </div>
+<h3>Technical Focus</h3>
+<div class="about-text">
+<p>
+• Modelling interaction energies and forces in molecular systems<br>
+• Machine learning using PyTorch and TensorFlow<br>
+• Dataset construction from simulation data<br>
+• Model validation and physical consistency checks<br>
+• Application to polymers, carbon chains, and large systems
+</p>
+</div>
 
-  <h3>Relevance</h3>
-  <div class="about-text">
-    <p>
-      This work is directly connected to materials modelling and product-oriented R&amp;D. It trained me to think about molecular interactions, structure-property relationships, and the practical limits of simulation when working with large systems.
-    </p>
-  </div>
+<h3>Outcome</h3>
+<div class="about-text">
+<p>
+The project led to models capable of approximating interaction energies with significantly reduced computational cost. This made it possible to study larger systems or longer simulation times while keeping a reasonable level of accuracy.
+</p>
+</div>
+
+<h3>Relevance</h3>
+<div class="about-text">
+<p>
+This type of approach is useful in materials modelling, where simulations need to balance accuracy and scale. It reflects my general way of working: combining physical understanding with data-driven methods to make complex systems more tractable.
+</p>
+</div>
+
 </section>
+</div>
+
+<footer>
+<div class="contact-bar">
+  <div class="social-icons">
+    <a href="mailto:nils211@hotmail.fr"><img src="../../assets/images/10.png" alt="Email"></a>
+    <a href="https://lu.linkedin.com/in/nils-davoine-81b46b19b" target="_blank"><img src="../../assets/images/9.png" alt="LinkedIn"></a>
+    <a href="https://twitter.com/NilsDavoine" target="_blank"><img src="../../assets/images/7.png" alt="Twitter"></a>
+    <a href="https://github.com/DavoineNils" target="_blank"><img src="../../assets/images/8.png" alt="GitHub"></a>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
