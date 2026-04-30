@@ -1,35 +1,220 @@
-<p>
-I work on modelling molecular systems, with a focus on materials, polymers, and large-scale interactions. 
-During my PhD at the University of Luxembourg, I studied how structure and interactions at the molecular level 
-translate into observable properties such as mechanical behaviour and transport.
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nils Davoine Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #eee;
+    }
 
-<p>
-My work is very hands-on. I build simulations, analyse results, and try to understand what is actually happening 
-in the system. I have worked with tools such as LAMMPS, GROMACS, and custom code, and developed machine learning 
-approaches to estimate interaction energies and forces when standard methods become too costly.
-</p>
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
 
-<p>
-Over time, what became important to me is not just running simulations, but making sense of them. Understanding 
-why a system behaves the way it does, and how changes at a small scale impact the overall behaviour. I have worked 
-on polymers, carbon-based systems, and other complex molecular structures, often in collaboration with other groups 
-to connect modelling results with more practical questions.
-</p>
+    .topnav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-<p>
-My path has taken me through Strasbourg, Milan, Paris, and Luxembourg. I was not the fastest at the beginning, 
-but I learned by observing, asking questions, and building my own way of working. During my PhD, I worked in a 
-large research group where I was exposed to many different approaches. This is where I developed a strong method 
-and became very efficient in my work.
-</p>
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-<p>
-I am now looking to move closer to applied R&D, where this type of work connects directly to real materials, 
-processes, and products.
-</p>
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
 
-<p>
-You can contact me at 
-<a href="mailto:nils.davoine@uni.lu" class="light-blue-link">nils.davoine@uni.lu</a>.
-</p>
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      padding-bottom: 12rem;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      flex: 1;
+      padding-right: 1rem;
+      text-align: justify;
+    }
+
+    .about-image-frame {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 1rem;
+    }
+
+    .about-image {
+      max-width: 200px;
+      display: block;
+      margin-top: -1rem;
+    }
+
+    .about-image-text {
+      flex: 1;
+      padding-left: 1rem;
+      line-height: 0.8;
+    }
+
+    .light-blue-link {
+      color: #6ca6e1;
+    }
+
+    .contact-bar {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="index.html">About Me</a>
+    <a href="projects/index.html">Projects</a>
+    <a href="cv/index.html">CV</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="team/index.html">Contact</a>
+  </div>
+
+  <header>
+    <h1>Nils Davoine</h1>
+    <p>Computational Materials Science | Polymer Modelling | Molecular Simulation</p>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+
+      <div class="about-container">
+        <div class="about-text">
+
+          <p>
+            I work on modelling molecular systems, with a focus on materials, polymers, and large-scale interactions.
+            During my PhD at the University of Luxembourg, I studied how structure and interactions at the molecular level
+            translate into observable properties such as mechanical behaviour, diffusion, and system stability.
+          </p>
+
+          <p>
+            My work is practical as much as theoretical. I build simulations, analyse results, and try to understand what is
+            actually happening in the system. I have worked with tools such as LAMMPS, GROMACS, Fortran, Python, and custom code,
+            and developed machine learning methods to estimate interaction energies and forces when standard calculations become costly.
+          </p>
+
+          <p>
+            Over time, what became most important to me was not only running simulations, but making sense of them.
+            Understanding why a system behaves the way it does, and how small-scale interactions can affect larger-scale behaviour.
+            I have worked on polymers, carbon-based systems, proteins, nanotubes, and other complex molecular structures.
+          </p>
+
+          <p>
+            My academic path took me through Strasbourg, Milan, Paris, Mulhouse, and Luxembourg. I trained in chemistry,
+            chemoinformatics, medicinal chemistry, molecular physics, macromolecules, and computational chemistry.
+            Earlier laboratory work also gave me hands-on experience with synthesis, catalytic systems, and molecular interactions.
+          </p>
+
+          <p>
+            During my PhD, I worked in a large research group where I was exposed to many different ways of thinking and working.
+            I learned methodically from the people around me. That is where I built my own way of working: clear, organised,
+            curious, and efficient.
+          </p>
+
+          <p>
+            I am now looking to move closer to applied R&amp;D, where scientific understanding connects directly to real materials,
+            processes, and products.
+          </p>
+
+          <p>
+            You can contact me at
+            <a href="mailto:nils211@hotmail.fr" class="light-blue-link">nils211@hotmail.fr</a>.
+          </p>
+
+        </div>
+
+        <div class="about-image-frame">
+          <img src="assets/images/PdP.jpg" alt="Profile Picture" class="about-image">
+
+          <div class="about-image-text">
+            <p>
+              <center>Nils Davoine</center><br>
+              <center>Computational Materials Scientist</center><br>
+              <center>Theoretical Chemical Physics</center><br>
+              <center>Luxembourg
+                <img src="assets/images/lux_flag.gif" alt="Luxembourg Flag" style="vertical-align: middle; width: 24px; height: 24px;">
+              </center><br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="contact-bar">
+      <div class="social-icons">
+        <a href="mailto:nils211@hotmail.fr"><img src="assets/images/10.png" alt="Email"></a>
+        <a href="https://lu.linkedin.com/in/nils-davoine-81b46b19b" target="_blank"><img src="assets/images/9.png" alt="LinkedIn"></a>
+        <a href="https://twitter.com/NilsDavoine" target="_blank"><img src="assets/images/7.png" alt="Twitter"></a>
+        <a href="https://github.com/DavoineNils" target="_blank"><img src="assets/images/8.png" alt="GitHub"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
