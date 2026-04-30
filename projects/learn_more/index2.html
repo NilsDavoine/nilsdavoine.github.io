@@ -1,50 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulation Tools - Nils Davoine</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #eee;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      padding-bottom: 12rem;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    h1 {
+      margin-top: 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .about-text {
+      text-align: justify;
+    }
+    .contact-bar {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+    .social-icons a {
+      margin: 0 10px;
+    }
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="../../index.html">About Me</a>
+  <a href="../index.html">Projects</a>
+  <a href="../../cv/index.html">CV</a>
+  <a href="../../blog/index.html">Blog</a>
+  <a href="../../team/index.html">Contact</a>
+</div>
+
+<header>
+  <h1>High-Performance Simulation Tools</h1>
+  <p>Scientific software, molecular simulation, and materials modelling.</p>
+</header>
+
+<div class="container">
 <section class="project">
-  <h2>Modelling Molecular Transport Across Biological Barriers</h2>
 
-  <div class="about-text">
-    <p>
-      This project focused on understanding how molecular properties influence transport across biological barriers, using the example of transplacental drug passage. The goal was to build a structured framework to analyse how molecules behave when crossing complex interfaces, combining data-driven approaches with physical intuition.
-    </p>
-  </div>
+<h2>High-Performance Simulation Tools for Molecular Systems</h2>
 
-  <h3>Problem</h3>
-  <div class="about-text">
-    <p>
-      Predicting whether a molecule can cross a biological barrier is a complex problem. It depends on multiple interacting factors such as molecular size, polarity, and interaction with the surrounding environment. Existing approaches are often fragmented, with limited structured datasets available for analysis.
-    </p>
-  </div>
+<div class="about-text">
+<p>
+This work was developed during my PhD in theoretical chemical physics. The goal was to build and use simulation tools to study large molecular systems, while ensuring reliability, performance, and usability in a research environment.
+</p>
+</div>
 
-  <h3>Approach</h3>
-  <div class="about-text">
-    <p>
-      I built a structured dataset from scientific literature, combining heterogeneous data sources into a consistent format. This required data cleaning, feature engineering, and careful validation to ensure reliability.
-    </p>
-    <p>
-      On top of this dataset, I developed predictive models to analyse how molecular descriptors relate to transport behaviour. The work involved statistical modelling and machine learning techniques, but the focus remained on understanding the physical meaning behind the predictions.
-    </p>
-  </div>
+<h3>Context</h3>
+<div class="about-text">
+<p>
+When working with polymers, carbon chains, or extended molecular systems, simulations quickly become expensive and complex. Accurately capturing interactions, especially long-range effects, requires both careful modelling and efficient computation.
+</p>
+</div>
 
-  <h3>Key Work</h3>
-  <div class="about-text">
-    <p>
-      • Data collection and structuring from multiple scientific sources<br>
-      • Feature engineering based on molecular properties<br>
-      • Development and evaluation of predictive models<br>
-      • Analysis of relationships between structure and transport behaviour
-    </p>
-  </div>
+<h3>My Work</h3>
+<div class="about-text">
+<p>
+I worked with simulation tools such as LAMMPS, GROMACS, and custom implementations. In parallel, I developed Fortran-based tools to support analysis and simulation workflows. The focus was on making simulations stable, reproducible, and efficient for large systems.
+</p>
+</div>
 
-  <h3>Outcome</h3>
-  <div class="about-text">
-    <p>
-      The project resulted in a consistent dataset and a set of models capable of identifying patterns in molecular transport behaviour. More importantly, it provided insight into how molecular structure influences barrier permeability, linking data-driven results with physical interpretation.
-    </p>
-  </div>
+<h3>Technical Focus</h3>
+<div class="about-text">
+<p>
+• Simulation of polymers, carbon-based systems, and molecular structures<br>
+• Development of scientific software (Fortran, Python)<br>
+• Analysis of interaction energies and forces<br>
+• Workflow design for reproducibility and validation<br>
+• Performance and numerical stability improvements
+</p>
+</div>
 
-  <h3>Relevance</h3>
-  <div class="about-text">
-    <p>
-      This type of work is directly related to broader problems in materials and biological systems, where transport, diffusion, and interaction mechanisms determine system behaviour. It reflects my general approach: combining data, modelling, and physical understanding to analyse complex systems.
-    </p>
-  </div>
+<h3>Why It Matters</h3>
+<div class="about-text">
+<p>
+A simulation is only useful if it can be trusted and reused. This work focused on building tools that are not only technically correct, but also clear and usable by others. It shaped the way I approach technical problems today.
+</p>
+</div>
+
+<h3>Relevance</h3>
+<div class="about-text">
+<p>
+This experience is directly connected to materials modelling and R&amp;D work. It trained me to understand interactions at the molecular level, and how these interactions translate into system behaviour.
+</p>
+</div>
+
 </section>
+</div>
+
+<footer>
+<div class="contact-bar">
+  <div class="social-icons">
+    <a href="mailto:nils.davoine@uni.lu"><img src="../../assets/images/10.png"></a>
+    <a href="https://lu.linkedin.com/in/nils-davoine-81b46b19b" target="_blank"><img src="../../assets/images/9.png"></a>
+    <a href="https://twitter.com/NilsDavoine" target="_blank"><img src="../../assets/images/7.png"></a>
+    <a href="https://github.com/DavoineNils" target="_blank"><img src="../../assets/images/8.png"></a>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
